@@ -24,4 +24,8 @@ export class LoginPage implements OnInit {
   register() {
     this.router.navigate(['register']);
   }
+
+  shouldShowComponent(campo: any) {
+    return !campo.valid && campo.touched;
+  }
 }

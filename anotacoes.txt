@@ -1,1 +1,22 @@
-https://www.youtube.com/watch?v=3gaVbroD-l8&list=PLlyAM-8-I7S9iNcZRfP4SQJhm4Mw5q5ku&index=8
+https://www.youtube.com/watch?v=E-aXqVe2K1g&list=PLlyAM-8-I7S9iNcZRfP4SQJhm4Mw5q5ku&index=9
+
+
+
+  verificaValidTouched(campo: any) {
+    return !campo.valid && campo.touched;
+  }
+
+              <app-campo-control-erro [mostrarErro]="verificaValidTouched(email)" msgErro="Email e obrigatorio">
+            </app-campo-control-erro>
+
+
+              @Input() mostrarErro: boolean | undefined;
+
+
+              <div *ngIf="mostrarErro">
+    <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+    <span class="sr-only">(error)</span>
+    <div *ngIf="mostrarErro" class="alert alert-danger" role="alert">
+        {{ msgErro }}
+    </div>
+</div>
