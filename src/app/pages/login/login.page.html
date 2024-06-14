@@ -17,9 +17,7 @@
             message="Email is mandatory"
           ></app-error-message>
 
-          <app-error-message
-            message="Email is invalid"
-          ></app-error-message>
+          <app-error-message message="Email is invalid"></app-error-message>
 
           <ion-item>
             <ion-label position="floating">Password</ion-label>
@@ -37,6 +35,7 @@
             fill="clear"
             size="full"
             [disabled]="!form.get('email')?.valid"
+            (click)="forgotEmailPassword()"
             >Forgot email/password</ion-button
           >
           <ion-button

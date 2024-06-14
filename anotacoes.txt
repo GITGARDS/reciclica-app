@@ -1,5 +1,4 @@
-https://www.youtube.com/watch?v=E-aXqVe2K1g&list=PLlyAM-8-I7S9iNcZRfP4SQJhm4Mw5q5ku&index=9
-
+https://www.youtube.com/watch?v=_p4lL3dhovY&list=PLlyAM-8-I7S9iNcZRfP4SQJhm4Mw5q5ku&index=10
 
 
   verificaValidTouched(campo: any) {
