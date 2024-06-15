@@ -41,6 +41,9 @@ export class LoginPage implements OnInit {
   }
 
   shouldShowComponent(campo: any) {
-    return !campo.valid && campo.touched;
+    return (
+      !this.form.get(campo)?.valid &&
+      (this.form.get(campo)?.touched || this.form.get(campo)?.dirty)
+    ) || false;
   }
 }

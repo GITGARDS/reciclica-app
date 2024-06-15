@@ -13,11 +13,11 @@
           </ion-item>
 
           <app-error-message
-            [mostrarErro]="shouldShowComponent(form.get('email'))"
-            message="Email is mandatory"
+          [mostrarErro]= "shouldShowComponent('email')"
+          message="Email is mandatory"
           ></app-error-message>
 
-          <app-error-message message="Email is invalid"></app-error-message>
+          <!-- <app-error-message message="Email is invalid"></app-error-message> -->
 
           <ion-item>
             <ion-label position="floating">Password</ion-label>
